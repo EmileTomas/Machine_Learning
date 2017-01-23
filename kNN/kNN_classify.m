@@ -24,6 +24,12 @@ distances=sqDistances.^0.5;
  
 closestResult=dataSetResult(sortedDistIndicies);
 resultRequency=tabulate(closestResult(1:k));
-result=resultRequency(1,1);
+if size(resultRequency,1)==1
+    result=resultRequency(1,1);
+else
+    [maxResult,maxIndex]=max(resultRequency);
+    result=resultRequency(maxIndex(3),1);
 end
+end
+
 
