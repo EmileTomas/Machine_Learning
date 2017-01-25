@@ -1,6 +1,15 @@
 Code for chapter 2 of *Machine Learning in Action*
 
-###File Description
+## Overview
+
+In this chapter, we will learn about the **kNN**(k-nearestNeighbor) classify algorithm. The idea of this algorithm is very simple, supposing every unit we want to classify has n features, and with a given dataset including n features and their classified result for every unit.
+
+To predict the classification of unit **m**:
+
+1. find out the nearest k units of **m** in the dataset in the n-dimension space.
+2. find the more frequent classified result in the k units as the predicted classified result of **m**
+
+## File Description
 
 - Util Function:
   - `kNN_classify.m`: classify an input based on training data set
